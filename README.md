@@ -1,6 +1,8 @@
 <h1 align="center">webpg2app</h1>
 <p align="center"><strong>Turn any webpage into a desktop app with one command, supports macOS, Windows, and Linux</strong></p>
 
+![favicon](https://res.cloudinary.com/dqv8dlj2s/image/upload/v1772326350/favicon_z20pgw.png)
+
 ## Features
 
 - **Lightweight**: Nearly 20 times smaller than Electron packages, typically around 5MB
@@ -29,7 +31,7 @@ More applications available at [Releases](https://github.com/mwakidenis/webpg2ap
 ## Keyboard Shortcuts
 
 | Mac | Windows/Linux | Function |
-|-----|--------------|----------|
+|-----|---------------|----------|
 | Cmd + [ | Ctrl + Left | Previous page |
 | Cmd + ] | Ctrl + Right | Next page |
 | Cmd + Up | Ctrl + Up | Scroll to top |
@@ -52,13 +54,10 @@ webpg2app https://github.com --name GitHub
 
 # Advanced usage
 webpg2app https://example.com --name MyApp --width 1200 --height 800 --hide-title-bar
-```
-
-## Development
+Development
 
 Requires Rust >=1.85 and Node >=22.
 
-```bash
 # Install dependencies
 pnpm install
 
@@ -67,8 +66,6 @@ pnpm run dev
 
 # Build application
 pnpm run build
-```
-
-## License
+License
 
 MIT License
