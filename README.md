@@ -6,7 +6,6 @@
 
 <p align="center"><strong>Turn any webpage into a desktop app with one command, supports macOS, Windows, and Linux</strong></p>
 
-![favicon](https://res.cloudinary.com/dqv8dlj2s/image/upload/v1772326350/favicon_z20pgw.png)
 
 ## Features
 
