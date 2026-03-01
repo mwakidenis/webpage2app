@@ -6,7 +6,6 @@
 
 <p align="center"><strong>Turn any webpage into a desktop app with one command, supports macOS, Windows, and Linux</strong></p>
 
-
 ## Features
 
 - **Lightweight**: Nearly 20 times smaller than Electron packages, typically around 5MB
@@ -23,29 +22,29 @@
 
 ## Popular Packages
 
-| Platform | Download |
-|----------|----------|
-| WeRead | [Mac](https://github.com/mwakidenis/webpg2app/releases) / [Windows](https://github.com/mwakidenis/webpg2app/releases) / [Linux](https://github.com/mwakidenis/webpg2app/releases) |
-| Twitter | [Mac](https://github.com/mwakidenis/webpg2app/releases) / [Windows](https://github.com/mwakidenis/webpg2app/releases) / [Linux](https://github.com/mwakidenis/webpg2app/releases) |
-| ChatGPT | [Mac](https://github.com/mwakidenis/webpg2app/releases) / [Windows](https://github.com/mwakidenis/webpg2app/releases) / [Linux](https://github.com/mwakidenis/webpg2app/releases) |
-| YouTube | [Mac](https://github.com/mwakidenis/webpg2app/releases) / [Windows](https://github.com/mwakidenis/webpg2app/releases) / [Linux](https://github.com/mwakidenis/webpg2app/releases) |
+| Platform | Download                                                                                                                                                                          |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| WeRead   | [Mac](https://github.com/mwakidenis/webpg2app/releases) / [Windows](https://github.com/mwakidenis/webpg2app/releases) / [Linux](https://github.com/mwakidenis/webpg2app/releases) |
+| Twitter  | [Mac](https://github.com/mwakidenis/webpg2app/releases) / [Windows](https://github.com/mwakidenis/webpg2app/releases) / [Linux](https://github.com/mwakidenis/webpg2app/releases) |
+| ChatGPT  | [Mac](https://github.com/mwakidenis/webpg2app/releases) / [Windows](https://github.com/mwakidenis/webpg2app/releases) / [Linux](https://github.com/mwakidenis/webpg2app/releases) |
+| YouTube  | [Mac](https://github.com/mwakidenis/webpg2app/releases) / [Windows](https://github.com/mwakidenis/webpg2app/releases) / [Linux](https://github.com/mwakidenis/webpg2app/releases) |
 
 More applications available at [Releases](https://github.com/mwakidenis/webpg2app/releases).
 
 ## Keyboard Shortcuts
 
-| Mac | Windows/Linux | Function |
-|-----|---------------|----------|
-| Cmd + [ | Ctrl + Left | Previous page |
-| Cmd + ] | Ctrl + Right | Next page |
-| Cmd + Up | Ctrl + Up | Scroll to top |
-| Cmd + Down | Ctrl + Down | Scroll to bottom |
-| Cmd + r | Ctrl + r | Refresh |
-| Cmd + w | Ctrl + w | Hide window |
-| Cmd + - | Ctrl + - | Zoom out |
-| Cmd + = | Ctrl + = | Zoom in |
-| Cmd + 0 | Ctrl + 0 | Reset zoom |
-| Cmd + L | Ctrl + L | Copy URL |
+| Mac        | Windows/Linux | Function         |
+| ---------- | ------------- | ---------------- |
+| Cmd + [    | Ctrl + Left   | Previous page    |
+| Cmd + ]    | Ctrl + Right  | Next page        |
+| Cmd + Up   | Ctrl + Up     | Scroll to top    |
+| Cmd + Down | Ctrl + Down   | Scroll to bottom |
+| Cmd + r    | Ctrl + r      | Refresh          |
+| Cmd + w    | Ctrl + w      | Hide window      |
+| Cmd + -    | Ctrl + -      | Zoom out         |
+| Cmd + =    | Ctrl + =      | Zoom in          |
+| Cmd + 0    | Ctrl + 0      | Reset zoom       |
+| Cmd + L    | Ctrl + L      | Copy URL         |
 
 ## Command-Line Packaging
 
@@ -81,3 +80,4 @@ MIT
 ██  ██  ██ ██ ███ ██ ██   ██ ██  ██  ██ ██   ██ ██      ██  ██ ██ ██       ██
 ██      ██  ███ ███  ██   ██ ██   ██ ██ ██████  ███████ ██   ████ ██  ██████
 
+```
