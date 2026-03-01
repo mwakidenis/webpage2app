@@ -1,0 +1,20 @@
+{
+  "productName": "webpg2app",
+  "identifier": "com.webpg2app.app",
+  "version": "3.10.0",
+  "app": {
+    "withGlobalTauri": true,
+    "trayIcon": {
+      "iconPath": "png/weekly_512.png",
+      "iconAsTemplate": false,
+      "id": "webpg2app-tray"
+    },
+    "security": {
+      "headers": {},
+      "csp": null
+    }
+  },
+  "build": {
+    "frontendDist": "../dist"
+  }
+}
