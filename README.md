@@ -5,7 +5,18 @@
 </p>
 
 <p align="center"><strong>Turn any webpage into a desktop app with one command, supports macOS, Windows, and Linux</strong></p>
-
+<div align="center">
+    <a href="https://twitter.com/Apro5550" target="_blank"> 
+    <img alt="twitter" src="https://img.shields.io/badge/follow-Apro5550-red?style=flat-square&logo=Twitter"></a> 
+    <a href="" target="_blank"> 
+    <img alt="telegram" src="https://img.shields.io/badge/chat-telegram-blueviolet?style=flat-square&logo=Telegram"></a>
+    <a href="https://github.com/mwakidenis/webpg2app/releases" target="_blank"> 
+    <img alt="GitHub downloads" src="https://img.shields.io/github/downloads/mwakidenis/webpg2app/total.svg?style=flat-square"></a> 
+    <a href="https://github.com/mwakidenis/webpg2app/commits" target="_blank"> 
+    <img alt="GitHub commit" src="https://img.shields.io/github/commit-activity/m/tw93/Pake?style=flat-square"></a>
+    <a href="https://github.com/mwakidenis/webpg2app/issues?q=is%3Aissue+is%3Aclosed" target="_blank"> 
+    <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/mwakidenis/webpg2app.svg?style=flat-square"></a> 
+</div>
 ## Features
 
 - **Lightweight**: Nearly 20 times smaller than Electron packages, typically around 5MB
