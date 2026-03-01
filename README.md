@@ -17,6 +17,7 @@
     <a href="https://github.com/mwakidenis/webpg2app/issues?q=is%3Aissue+is%3Aclosed" target="_blank"> 
     <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/mwakidenis/webpg2app.svg?style=flat-square"></a> 
 </div>
+
 ## Features
 
 - **Lightweight**: Nearly 20 times smaller than Electron packages, typically around 5MB
