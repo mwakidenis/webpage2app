@@ -11,12 +11,12 @@ export function getCliProgram() {
   const { green, yellow } = chalk;
 
   const logo = `
-${green("███    ███ ██     ██  █████  ██   ██ ██ ██████  ███████ ███    ██ ██  ██████ ")}
-${green("████  ████ ██     ██ ██   ██ ██  ██  ██ ██   ██ ██      ████   ██ ██ ██      ")}
-${green("██ ████ ██ ██  █  ██ ███████ █████   ██ ██   ██ █████   ██ ██  ██ ██  ██████ ")}
-${green("██  ██  ██ ██ ███ ██ ██   ██ ██  ██  ██ ██   ██ ██      ██  ██ ██ ██       ██")}
-${green("██      ██  ███ ███  ██   ██ ██   ██ ██ ██████  ███████ ██   ████ ██  ██████ ")}
-${yellow("https://github.com/mwakidenis/webpg2app")}
+${green('███    ███ ██     ██  █████  ██   ██ ██ ██████  ███████ ███    ██ ██  ██████ ')}
+${green('████  ████ ██     ██ ██   ██ ██  ██  ██ ██   ██ ██      ████   ██ ██ ██      ')}
+${green('██ ████ ██ ██  █  ██ ███████ █████   ██ ██   ██ █████   ██ ██  ██ ██  ██████ ')}
+${green('██  ██  ██ ██ ███ ██ ██   ██ ██  ██  ██ ██   ██ ██      ██  ██ ██ ██       ██')}
+${green('██      ██  ███ ███  ██   ██ ██   ██ ██ ██████  ███████ ██   ████ ██  ██████ ')}
+${yellow('https://github.com/mwakidenis/webpg2app')}
   can turn any webpage into a desktop app with Rust.
 `;
 
@@ -27,9 +27,23 @@ ${yellow("https://github.com/mwakidenis/webpg2app")}
     .argument('[url]', 'The web URL you want to package', validateUrlInput)
     .option('--name <string>', 'Application name')
     .option('--icon <string>', 'Application icon', DEFAULT.icon)
-    .option('--width <number>', 'Window width', validateNumberInput, DEFAULT.width)
-    .option('--height <number>', 'Window height', validateNumberInput, DEFAULT.height)
-    .option('--use-local-file', 'Use local file packaging', DEFAULT.useLocalFile)
+    .option(
+      '--width <number>',
+      'Window width',
+      validateNumberInput,
+      DEFAULT.width,
+    )
+    .option(
+      '--height <number>',
+      'Window height',
+      validateNumberInput,
+      DEFAULT.height,
+    )
+    .option(
+      '--use-local-file',
+      'Use local file packaging',
+      DEFAULT.useLocalFile,
+    )
     .option('--fullscreen', 'Start in full screen', DEFAULT.fullscreen)
     .option('--hide-title-bar', 'For Mac, hide title bar', DEFAULT.hideTitleBar)
     .option('--multi-arch', 'For Mac, both Intel and M1', DEFAULT.multiArch)
@@ -61,8 +75,10 @@ ${yellow("https://github.com/mwakidenis/webpg2app")}
         .hideHelp(),
     )
     .addOption(
-      new Option('--targets <string>', 'Build target format for your system')
-        .default(DEFAULT.targets),
+      new Option(
+        '--targets <string>',
+        'Build target format for your system',
+      ).default(DEFAULT.targets),
     )
     .addOption(
       new Option('--app-version <string>', 'App version, same as package.json')
@@ -160,7 +176,10 @@ ${yellow("https://github.com/mwakidenis/webpg2app")}
         .hideHelp(),
     )
     .addOption(
-      new Option('--internal-url-regex <string>', 'Regex pattern for internal URLs')
+      new Option(
+        '--internal-url-regex <string>',
+        'Regex pattern for internal URLs',
+      )
         .default(DEFAULT.internalUrlRegex)
         .hideHelp(),
     )

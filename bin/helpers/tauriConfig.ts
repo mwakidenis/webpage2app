@@ -4,7 +4,9 @@ import { npmDirectory } from '@/utils/dir';
 
 // Load configs from npm package directory, not from project source
 const tauriSrcDir = path.join(npmDirectory, 'src-tauri');
-const webpg2appConf = fsExtra.readJSONSync(path.join(tauriSrcDir, 'webpg2app.json'));
+const webpg2appConf = fsExtra.readJSONSync(
+  path.join(tauriSrcDir, 'webpg2app.json'),
+);
 const CommonConf = fsExtra.readJSONSync(
   path.join(tauriSrcDir, 'tauri.conf.json'),
 );

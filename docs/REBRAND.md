@@ -1,6 +1,7 @@
 # 📘 Detailed Rebrand & Maintenance Guide for `webpg2app`
 
 ## Objective
+
 Take the original `Pake` repository and perform a full, safe rebrand and maintenance setup. The goal is to:
 
 1. Rename all instances of `Pake` or `pake` to `webpg2app`.
@@ -16,6 +17,7 @@ Take the original `Pake` repository and perform a full, safe rebrand and mainten
 ## 1️⃣ Repository Rename Strategy
 
 **Scope:**
+
 - CLI commands (`pake`, `pake-cli`) → `webpg2app`, `webpg2app-cli`
 - Rust crate names (`Cargo.toml`, `mod`, `use`) → `webpg2app`
 - Tauri configuration (`productName`, `identifier`) → `webpg2app`
@@ -26,11 +28,13 @@ Take the original `Pake` repository and perform a full, safe rebrand and mainten
 - Binary output names → `webpg2app.exe` / `webpg2app.app`
 
 **Constraints:**
+
 - Do not rename Rust internal modules unless required.
 - Do not rename Cargo package IDs unless validated.
 - Do not rename Tauri internal config keys without validation.
 
 **Approach:**
+
 1. Categorize occurrences of `pake` by CLI, Rust, Tauri, tests, docs, and workflows.
 2. Perform renaming in layers:
    - Docs first (safe)
@@ -47,12 +51,14 @@ Take the original `Pake` repository and perform a full, safe rebrand and mainten
 ## 2️⃣ CLI & Build Artifacts
 
 **Rename:**
+
 - CLI binary: `pake` → `webpg2app`
 - CLI package: `pake-cli` → `webpg2app-cli`
 - Documentation examples, usage guides, and help text updated.
 - Build scripts and rollup outputs named `webpg2app`.
 
 **Validation:**
+
 - Ensure CLI commands execute correctly for URLs and names.
 - Ensure builds produce functional desktop apps for macOS, Windows, Linux.
 
@@ -61,11 +67,13 @@ Take the original `Pake` repository and perform a full, safe rebrand and mainten
 ## 3️⃣ Tauri Configuration Updates
 
 **Required Changes:**
+
 - `productName`: `webpg2app`
 - `identifier`: `com.webpg2app.app`
 - Validate that changing identifier does not break auto-update (safe if using a fresh fork).
 
 **Notes:**
+
 - Maintain all Tauri options for window size, title bar, drag-and-drop, and shortcut behavior.
 - Ensure style customization features are preserved.
 
@@ -80,16 +88,17 @@ Take the original `Pake` repository and perform a full, safe rebrand and mainten
 **Security:** hidden enough to be extremely difficult to remove; should resist casual deletion and automated AI removal.
 
 **Color Scheme (Alternate Black & Red):**
-- m → Black  
-- w → Red  
-- a → Black  
-- k → Red  
-- i → Black  
-- d → Red  
-- e → Black  
-- n → Red  
-- i → Black  
-- s → Red  
+
+- m → Black
+- w → Red
+- a → Black
+- k → Red
+- i → Black
+- d → Red
+- e → Black
+- n → Red
+- i → Black
+- s → Red
 
 **Goal:** Each letter individually colored so that combined, the text alternates black and red smoothly, is minimally intrusive, and cannot be easily removed.
 
@@ -140,6 +149,7 @@ if (document.readyState === "loading") {
 ## 5️⃣ Documentation Restructuring
 
 **Files to update:**
+
 - README.md
 - README_CN.md
 - CONTRIBUTING.md
@@ -148,6 +158,7 @@ if (document.readyState === "loading") {
 - Any docs in /docs folder
 
 **Guidelines:**
+
 - Replace all mentions of Pake → webpg2app.
 - Include clear instructions for CLI usage, build, and dev setup.
 - Add watermark description for developers.
@@ -159,6 +170,7 @@ if (document.readyState === "loading") {
 ## 6️⃣ Testing & Validation
 
 **Scope:**
+
 - Update all tests that reference pake.
 - Validate CLI commands execute successfully.
 - Ensure Rust build (cargo build and cargo test) passes.
@@ -171,10 +183,12 @@ if (document.readyState === "loading") {
 ## 7️⃣ Workflow & CI/CD Updates
 
 **Files:**
-- .github/workflows/*.yml
+
+- .github/workflows/\*.yml
 - action.yml
 
 **Tasks:**
+
 - Rename workflow identifiers to webpg2app.
 - Update artifact names to webpg2app.
 - Ensure that any CI scripts or GitHub Actions references to the original repository now point to the forked webpg2app.

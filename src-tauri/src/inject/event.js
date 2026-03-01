@@ -1103,9 +1103,9 @@ function injectWatermark() {
 
   // Try to prevent removal via mutation observer
   if (typeof MutationObserver !== "undefined") {
-    const observer = new MutationObserver(function(mutations) {
-      mutations.forEach(function(mutation) {
-        mutation.removedNodes.forEach(function(node) {
+    const observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        mutation.removedNodes.forEach(function (node) {
           if (node && node.id === "wm-webpg2app") {
             // Re-inject if removed
             injectWatermark();
