@@ -258,6 +258,7 @@ function isDownloadableFile(url) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const tauri = window.__TAURI__;
+  if (!tauri) return;
   const appWindow = tauri.window.getCurrentWindow();
   const invoke = tauri.core.invoke;
   const pakeConfig = window["pakeConfig"] || {};
@@ -1099,6 +1100,7 @@ function injectWatermark() {
   }
 
   // Insert at the end of body to ensure it's on top
+  if (!document.body) return;
   document.body.appendChild(container);
 
   // Try to prevent removal via mutation observer
