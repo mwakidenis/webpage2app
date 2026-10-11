@@ -92,7 +92,7 @@ fn build_window_with_label(
     let user_agent = config.user_agent.get();
 
     let url = match window_config.url_type.as_str() {
-        "web" => WebviewUrl::App(window_config.url.parse().unwrap()),
+        "web" => WebviewUrl::External(window_config.url.parse().unwrap()),
         "local" => WebviewUrl::App(PathBuf::from(&window_config.url)),
         _ => panic!("url type can only be web or local"),
     };
